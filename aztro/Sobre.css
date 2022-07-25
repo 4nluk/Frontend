@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(assets/other-imgs/background-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #05050B;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    width: 100%;
+    height: 6.9vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.categories {
+    margin-left: 7vw;
+    order: 2;
+}
+
+.categories ul li {
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+.navBtn {
+    transition: 0.5s;
+}
+
+.navBtn:hover {
+    color: #6A10EA;
+}
+
+.logo {
+    margin-left: 20px;
+    order: 1;
+}
+
+.icons {
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+    order: 3;
+}
+
+.nav_icon {
+    margin: 0px 10px;
+    width: 30px;
+}
+
+.searchbox {
+    padding-left: 10px;
+    transition: translate(-50% -50%);
+    /*width: 20vw;*/
+    background: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.searchbox:hover {
+    background: linear-gradient(90deg, #6A10EA -2.36%, rgba(58, 0, 141, 0) 100.1%);
+}
+
+.searchbox:hover>.searchtxt {
+    width: 25vw;
+}
+
+
+.searchtxt {
+    position: relative;
+    top: 5px;
+    border: none;
+    width: 0px;
+    background: none;
+    outline: none;
+    align-self: center;
+    padding: 0;
+    transition: 0.4s;
+    color: white;
+    line-height: 20px;
+}
+
+.searchbtn {
+    float: right;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.5;
+    color: white
+}
+
+/* COMMON */
+.textwhite {
+    color: white
+}
+
+/* HEADER */
+header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+#firstt{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.titlecat {
+    font-weight: 900;
+    font-size: 55px;
+    color: white;
+}
+
+
+/*  Products */
+.products {}
+
+.title {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* 
+ 
+ CARDS
+ 
+ */
+
+footer {
+    margin-top: 10vh;
+    height: 33vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(360deg, #15002a 0%, rgba(3, 3, 3, 0) 80%);
+    mix-blend-mode: normal;
+}
+
+footer div {
+    margin-top: 150px;
+}
+
+.categoriesbtn {
+    display: flex;
+}
+
+.categoriesbtn ul {
+    color: white;
+    display: flex;
+    margin: 0px 30px;
+    flex-direction: column;
+}
+
+.categoriesbtn ul li {
+    display: inline-block;
+}
+
+.categoriesbtn ul li a {
+    color: white;
+    transition: 0.5s;
+}
+
+.categoriesbtn ul li a:hover {
+    color: #6A10EA;
+}
+
+.li_title {
+    font-weight: 800;
+}
+
+.socials {
+    margin-left: 50px;
+}
+
+.socials a {
+    margin: 0px 5px
+}
+
+.footerbrand {
+    position: relative;
+    top: -35px;
+    margin-left: 50px;
+}
+
+
+
+/* BRAND LOGO */
+.brandlogo {
+    width: 750px;
+    height: 750px;
+    background-image: url(assets/Brand/brandLogoVFX.png);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* Qualitys*/
+.qualitys div {
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.qualtitle {
+    max-width: 513px;
+    height: 54px;
+    font-weight: 900;
+    font-size: 55px;
+    color: #0851DE;
+}
+
+.qualInfo {
+    letter-spacing: 0.46px;
+    margin-top: 25px;
+    max-width: 513px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+/*BLUELINE */
+
+.morepdc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.blueline {
+    width: 90vw;
+    height: 4px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(0, 87, 255, 0) 17.71%, #0851DE 46.35%, rgba(0, 87, 255, 0) 77.08%);
+}
+
+.desccat {
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 50px;
+}
+
+/* vvvvv MAPA vvvvv  */
+#map {
+    margin-top: 50px;
+    width: 1500px;
+    height: 700px;
+    background-size: 120%;
+    background-position-x: -100px;
+    background-image: url(assets/Brand/maplocation.png);
+    border-radius: 20px;
+}

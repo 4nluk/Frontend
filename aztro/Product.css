@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(assets/other-imgs/background-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #05050B;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    width: 100%;
+    height: 6.9vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.categories {
+    margin-left: 7vw;
+    order: 2;
+}
+
+.categories ul li {
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+.navBtn {
+    transition: 0.5s;
+}
+
+.navBtn:hover {
+    color: #6A10EA;
+}
+
+.logo {
+    margin-left: 20px;
+    order: 1;
+}
+
+.icons {
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+    order: 3;
+}
+
+.nav_icon {
+    margin: 0px 10px;
+    width: 30px;
+}
+
+.searchbox {
+    padding-left: 10px;
+    transition: translate(-50% -50%);
+    /*width: 20vw;*/
+    background: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.searchbox:hover {
+    background: linear-gradient(90deg, #6A10EA -2.36%, rgba(58, 0, 141, 0) 100.1%);
+}
+
+.searchbox:hover>.searchtxt {
+    width: 25vw;
+}
+
+
+.searchtxt {
+    position: relative;
+    top: 5px;
+    border: none;
+    width: 0px;
+    background: none;
+    outline: none;
+    align-self: center;
+    padding: 0;
+    transition: 0.4s;
+    color: white;
+    line-height: 20px;
+}
+
+.searchbtn {
+    float: right;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.5;
+    color: white
+}
+
+/* COMMON */
+.textwhite {
+    color: white
+}
+
+/* HEADER */
+header {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*  Products */
+.products {}
+
+.title {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* 
+ 
+ CARDS
+ 
+ */
+
+footer {
+    margin-top: 10vh;
+    height: 33vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(360deg, #15002a 0%, rgba(3, 3, 3, 0) 80%);
+    mix-blend-mode: normal;
+}
+
+footer div {
+    margin-top: 150px;
+}
+
+.categoriesbtn {
+    display: flex;
+}
+
+.categoriesbtn ul {
+    color: white;
+    display: flex;
+    margin: 0px 30px;
+    flex-direction: column;
+}
+
+.categoriesbtn ul li {
+    display: inline-block;
+}
+
+.categoriesbtn ul li a {
+    color: white;
+    transition: 0.5s;
+}
+
+.categoriesbtn ul li a:hover {
+    color: #6A10EA;
+}
+
+.li_title {
+    font-weight: 800;
+}
+
+.socials {
+    margin-left: 50px;
+}
+
+.socials a {
+    margin: 0px 5px
+}
+
+.footerbrand {
+    position: relative;
+    top: -35px;
+    margin-left: 50px;
+}
+
+/*CATBTN*/
+.catbuttons {
+    height: 25px;
+}
+
+.catbuttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #061033;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 85px;
+    height: 32px;
+    color: #0851DE;
+    border: none;
+    transition: 0.5s;
+}
+
+.catbuttons a:hover {
+    font-size: 18px;
+    width: 97px;
+    height: 38px;
+}
+
+/* PRODUTOS */
+.productimgs {
+    display: grid;
+    grid-template-columns: 196px 668px;
+    grid-template-rows: repeat(3, 216px);
+    grid-template-areas:
+        "pic1 main"
+        "pic2 main"
+        "pic3 main";
+}
+
+/* Product Picture */
+
+
+.marginleft20 {
+    margin-left: 20px;
+}
+
+.marginbottom20 {
+    margin-bottom: 20px;
+}
+
+.radiusPrd {
+    border-radius: 8px;
+}
+
+.coverbg {
+    background-size: cover;
+}
+
+#picmain {
+    grid-area: main;
+    margin-right: 20px;
+    background-image: url(assets/Sneakers/pp3.webp)
+}
+
+#pic1 {
+    grid-area: pic1;
+    background-image: url(assets/Sneakers/pp1.webp)
+}
+
+#pic2 {
+    grid-area: pic2;
+    background-image: url(assets/Sneakers/pp2.webp)
+}
+
+#pic3 {
+    grid-area: pic3;
+    background-image: url(assets/Sneakers/pp3.webp)
+}
+
+/* DETAILS AND BUY */
+.Pdtails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 630px;
+    margin-left: 50px;
+}
+
+.Pdtails h1 {
+    margin-top: 20px;
+    width: 443px;
+    height: 135px;
+    font-weight: 900;
+    font-size: 55px;
+    color: white;
+}
+
+.Pdtails h2 {
+    margin-top: 10px;
+    width: 501px;
+    height: 166px;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+#pricing {
+    display: flex;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 60px;
+    color: #0851DE;
+}
+
+:root {
+    --gradient: linear-gradient(-30deg,
+            #6A10EA,
+            #6A10EA,
+            #4A29A7,
+            #292DA7,
+            #292DA7,
+            #292DA7);
+}
+
+#buybtn {
+    cursor: pointer;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 502px;
+    height: 59px;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    border-radius: 8px;
+    transition: 0.5s;
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#buybtn:hover {
+    background-position-x: 79%;
+
+}
+
+/*BLUELINE */
+
+.morepdc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.blueline {
+    width: 90vw;
+    height: 4px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(0, 87, 255, 0) 17.71%, #0851DE 46.35%, rgba(0, 87, 255, 0) 77.08%);
+}
+
+.moreproducts1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moreproducts1 h1 {
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+}
+
+/* PRODUCTS GRID */
+.prodgrid {
+    margin: 50px 0px;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 170px);
+    grid-template-rows: 280px;
+    gap: 20px;
+}
+
+/* CARD 01 */
+.card01 {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #0C0C14;
+    box-shadow: 5px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.card01:hover>.textcard h2 {
+    color: #4A29A7;
+}
+
+
+
+.card01:hover>.textcard a {
+    background-position: right;
+
+}
+
+.textcard {
+    margin-bottom: 10px;
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+}
+
+.downcard {
+    width: 100%;
+    margin: 0px 20px;
+}
+
+.textcard h1 {
+    min-height: 34px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+
+.textcard h2 {
+    font-weight: 800;
+    font-size: 20px;
+    transition: 0.8s;
+    color: #0851DE;
+}
+
+.textcard a {
+    transition: background-position 1s;
+    position: relative;
+    top: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    border-radius: 8px;
+    font-weight: 700;
+    color: white;
+}
+
+.imgcard01 {
+    margin: 10px 10px 0px 10px;
+    width: 80%;
+    height: 50%;
+    border-radius: 8px;
+    background-size: cover;
+    background-position-x: 50%;
+}
+
+.card_i001 {
+    background-image: url(assets/Sneakers/AirMaxFutura.webp);
+}
+
+.card_i002 {
+    background-image: url(assets/Sneakers/2.webp);
+}
+
+.card_i003 {
+    background-image: url(assets/Sneakers/3.webp);
+}
+
+#btnver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+#btnver:hover {
+    color: #793cd5;
+    border: 2px solid #793cd5;
+}

@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(assets/other-imgs/background-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #05050B;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    width: 100%;
+    height: 6.9vh;
+    overflow: hidden;
+    align-items: center;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.categories {
+    margin-left: 7vw;
+    order: 2;
+}
+
+.categories ul li {
+    margin: 0px 10px;
+    display: inline-block;
+}
+
+.navBtn {
+    transition: 0.5s;
+}
+
+.navBtn:hover {
+    color: #6A10EA;
+}
+
+.logo {
+    margin-left: 20px;
+    order: 1;
+}
+
+.icons {
+    right: 0;
+    position: absolute;
+    margin-right: 20px;
+    order: 3;
+}
+
+.nav_icon {
+    margin: 0px 10px;
+    width: 30px;
+}
+
+.searchbox {
+    padding-left: 10px;
+    transition: translate(-50% -50%);
+    /*width: 20vw;*/
+    background: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.searchbox:hover {
+    background: linear-gradient(90deg, #6A10EA -2.36%, rgba(58, 0, 141, 0) 100.1%);
+}
+
+.searchbox:hover>.searchtxt {
+    width: 25vw;
+}
+
+
+.searchtxt {
+    position: relative;
+    top: 5px;
+    border: none;
+    width: 0px;
+    background: none;
+    outline: none;
+    align-self: center;
+    padding: 0;
+    transition: 0.4s;
+    color: white;
+    line-height: 20px;
+}
+
+.searchbtn {
+    float: right;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0.5;
+    color: white
+}
+
+/* COMMON */
+.textwhite {
+    color: white
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Products */
+
+
+/* 
+ 
+ CARDS
+ 
+ */
+
+footer {
+    margin-top: 10vh;
+    height: 33vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(360deg, #15002a 0%, rgba(3, 3, 3, 0) 80%);
+    mix-blend-mode: normal;
+}
+
+footer div {
+    margin-top: 150px;
+}
+
+.categoriesbtn {
+    display: flex;
+}
+
+.categoriesbtn ul {
+    color: white;
+    display: flex;
+    margin: 0px 30px;
+    flex-direction: column;
+}
+
+.categoriesbtn ul li {
+    display: inline-block;
+}
+
+.categoriesbtn ul li a {
+    color: white;
+    transition: 0.5s;
+}
+
+.categoriesbtn ul li a:hover {
+    color: #6A10EA;
+}
+
+.li_title {
+    font-weight: 800;
+}
+
+.socials {
+    margin-left: 50px;
+}
+
+.socials a {
+    margin: 0px 5px
+}
+
+.footerbrand {
+    position: relative;
+    top: -35px;
+    margin-left: 50px;
+}
+
+
+
+
+/*BLUELINE */
+
+.blueline {
+    width: 90vw;
+    height: 4px;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, rgba(0, 87, 255, 0) 17.71%, #0851DE 46.35%, rgba(0, 87, 255, 0) 77.08%);
+}
+
+/*HELPFORM*/
+.helpform {
+    width: 800px;
+    height: auto;
+    background: #0C0C14;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+.helpgrid {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(2, 155px) 657.86px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "nome sobrenome"
+        "email telefone"
+        "mensagem mensagem"
+        "btnsend btnsend";
+}
+
+/* CATEGORIAS mutuals */
+.paddingleft {
+    padding-left: 16px;
+}
+
+.paddingright {
+    padding-right: 16px;
+}
+
+.allcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CATEGORIAS */
+
+#Nome {
+    grid-area: nome;
+}
+
+#Sobrenome {
+    grid-area: sobrenome;
+}
+
+#Email {
+    grid-area: email;
+}
+
+#Telefone {
+    grid-area: telefone;
+}
+
+#Mensagem {
+    grid-area: mensagem;
+}
+
+#btnsend {
+    grid-area: btnsend;
+}
+
+/* CUSTOM-CATEGORIAS */
+.nomeclatura {
+    color: #0851DE;
+    font-weight: 900;
+    font-size: 20px;
+    width: 350px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.inputhelp {
+    width: 350px;
+    height: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 5px;
+    line-height: 20px;
+
+}
+
+.inputhelp::placeholder {
+    color: black;
+}
+
+#inputhelpmsg::placeholder {
+    color: black;
+}
+
+#inputhelpmsg {
+    width: 730px;
+    height: 80%;
+    background: #FFFFFF;
+    padding: 8px;
+    border-radius: 8px;
+    overflow-wrap: break-word;
+    outline: none;
+
+}
+
+#nomeclaturamsg {
+    color: #0851DE;
+    font-weight: 900;
+    font-size: 20px;
+    width: 734px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#btnsend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -23px;
+}
+
+#btnsend button {
+    width: 275.48px;
+    height: 86.34px;
+    background: #0851DE;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+
+#btnsend button:hover {
+    background: #6A10EA;
+}
+
+#btnsend button:active {
+    transition: 0.3s;
+    width: 220px;
+    height: 68.8px;
+    font-size: 15px;
+    background: none;
+    border: solid 1px #6A10EA;
+}
+
+#firstt {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.titlecat h1{
+    font-weight: 900;
+    font-size: 55px;
+    text-align: center;
+    color: white;
+}
+.titlecat h2{
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+}
